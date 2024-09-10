@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Silkscreen&display=swap');
+
+:root {
+    --cor-primaria: rgb(0, 0, 0);
+    --cor-secundaria: rgb(225, 225, 225);
+    --cor-terciaria: rgb(145, 7, 237);
+
+    --fonte-primaria: 'Silkscreen', sans-serif;
+    --fonte-secundaria: 'Hedvig Letters Serif', serif;
+}
+* {
+    margin: 0;
+    padding: 0; 
+}
+body {
+    color: var(--cor-secundaria);;
+    background-color: var(--cor-primaria);
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.cabecalho {
+    padding: 2% 0% 0% 12%;
+}
+.cabecalho__menu {
+    display: flex;
+    font-size: 24px;
+    font-family: var(--fonte-primaria);
+    gap: 80px;
+}
+.menu__links {
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+.menu__links__destaque {
+    color: white;
+    text-decoration: none;
+}
+
+/* FOOTER */
+.rodape {
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+    padding: 12px;
+}
+
+/* --------PAGINA HOME-------- */
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10% 12%;
+    gap: 30px;
+}
