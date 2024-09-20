@@ -75,7 +75,7 @@ body {
 /* -------- PAGINA LOGIN -------- */
 .login {
     transform: scale(1.5);
-    max-width: 400px;
+    max-width: 300px;
     width: 100%;
     padding: 20px;
     border: 1px solid #ccc;
@@ -83,12 +83,13 @@ body {
     background-color: var(--cor-primaria);
     margin: 20px 0;
     color: var(--cor-terciaria);
+    justify-content: center;
     font-family: var(--fonte-primaria);
 }
 
 .login__campo {
     padding-top: 10px;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
 }
 
 /* -------- PAGINA REGISTRE-SE -------- */
@@ -115,7 +116,40 @@ body {
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
-    height: 100vh;
+    height: 50vh;
     width: 100vw; 
     text-align: center; 
+}
+
+.contatos{
+    display: flex;
+    column-gap: 50px;
+    margin-top: 50px;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-secundaria);
+    flex-direction: column;
+    gap: 20px;
+    
+    
+
+}
+.foto_contato{
+    max-width: 200px; /* Ajuste a largura máxima aqui */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.container_contatos{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 50px;
+   gap: 80px;
+   margin-top: 50px;
+   font-size: 20px;
+   
+}
+a{
+    color: white;
 }
