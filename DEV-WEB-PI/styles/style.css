@@ -20,6 +20,14 @@ body {
 }
 
 /* HEADER */
+.cabecalho2{
+    display: flex;
+    font-size: 24px;
+    font-family: var(--fonte-primaria);
+    gap: 80px;
+    margin-left: 160px;
+    
+}
 .cabecalho {
     padding: 2% 0% 0% 12%;
 }
@@ -66,7 +74,16 @@ body {
 
 /* -------- PAGINA LOGIN -------- */
 .login {
-    transform: scale(1.5); 
+    transform: scale(1.5);
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: var(--cor-primaria);
+    margin: 20px 0;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-primaria);
 }
 
 .login__campo {
@@ -76,7 +93,16 @@ body {
 
 /* -------- PAGINA REGISTRE-SE -------- */
 .registro {
-    transform: scale(1.5); 
+    transform: scale(1.5);
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: var(--cor-primaria);
+    margin: 20px 0;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-primaria);
 }
 
 .registro__campo {
@@ -84,4 +110,12 @@ body {
     padding-bottom: 10px; 
 }
 
-/* -------- PAGINA LISTA DE JOGOS -------- */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    width: 100vw; 
+    text-align: center; 
+}
