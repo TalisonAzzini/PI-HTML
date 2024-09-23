@@ -20,14 +20,6 @@ body {
 }
 
 /* HEADER */
-.cabecalho2{
-    display: flex;
-    font-size: 24px;
-    font-family: var(--fonte-primaria);
-    gap: 80px;
-    margin-left: 160px;
-    
-}
 .cabecalho {
     padding: 2% 0% 0% 12%;
 }
@@ -49,6 +41,16 @@ body {
     text-decoration: none;
 }
 
+/* FOOTER */
+.rodape {
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+    padding: 12px;
+}
+
 /* --------PAGINA HOME-------- */
 .apresentacao {
     display: flex;
@@ -60,16 +62,6 @@ body {
 
 .apresentacao__descricao {
     font-size: 30px;
-}
-
-/* FOOTER */
-.rodape {
-    color: var(--cor-primaria);
-    background-color: var(--cor-terciaria);
-    font-size: 24px;
-    font-family: var(--fonte-secundaria);
-    text-align: center;
-    padding: 12px;
 }
 
 /* -------- PAGINA LOGIN -------- */
@@ -108,20 +100,20 @@ body {
 
 .registro__campo {
     padding-top: 10px;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     height: 50vh;
-    width: 100vw; 
-    text-align: center; 
+    width: 100vw;
+    text-align: center;
 }
 
-.contatos{
+.contatos {
     display: flex;
     column-gap: 50px;
     margin-top: 50px;
@@ -129,27 +121,28 @@ body {
     color: var(--cor-secundaria);
     flex-direction: column;
     gap: 20px;
-    
-    
-
 }
-.foto_contato{
-    max-width: 200px; /* Ajuste a largura máxima aqui */
-    height: auto; /* Mantém a proporção da imagem */
+
+.foto_contato {
+    max-width: 200px;
+    /* Ajuste a largura máxima aqui */
+    height: auto;
+    /* Mantém a proporção da imagem */
     border-radius: 50%;
     margin-right: 20px;
 }
-.container_contatos{
+
+.container_contatos {
     display: flex;
     justify-content: center;
     width: 100%;
-    border-collapse: separate; 
+    border-collapse: separate;
     border-spacing: 50px;
-   gap: 80px;
-   margin-top: 50px;
-   font-size: 20px;
-   
+    gap: 80px;
+    margin-top: 50px;
+    font-size: 20px;
 }
-a{
+
+a {
     color: white;
 }
