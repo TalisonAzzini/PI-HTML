@@ -126,6 +126,8 @@ body {
 .foto_contato {
     max-width: 200px;
     /* Ajuste a largura máxima aqui */
+    max-height: 200px;
+    /* Ajustando a altura maxima */
     height: auto;
     /* Mantém a proporção da imagem */
     border-radius: 50%;
