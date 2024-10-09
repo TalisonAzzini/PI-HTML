@@ -1,8 +1,7 @@
-<h1>Projeto Integrador - Desenvolvimento web<br><hr>
-<h3>Prof.: Ronaldo Santos
+<h1>Projeto Integrador - Desenvolvimento web<\h1><br><hr>
+<p>Trabalho avaliátivo da disciplina Desenvolvimento Web</p>
   
-###
-
+<h3>Prof.: Ronaldo Santos
 Alunos:<br>
 <ul>
   <li>Paulo Marcos - 202403317761
