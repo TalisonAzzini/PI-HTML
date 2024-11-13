@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta htpp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto integrador - Home</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script>
+        // Função para verificar os parâmetros
+        function getRegistrado(boleano) {
+            let params = new URLSearchParams(window.location.search);
+            return params.get(boleano);
+        }
+        const status = getRegistrado('status');
+
+        if (status === 'loginSucesso') {
+            window.alert("Registro realizado com sucesso!");
+        }
+        else if(status === 'senhaIncorreta'){
+            window.alert("senha ou login incorretos.");
+        }
+        else if(status === 'usuarioNaoEncontrado'){
+            window.alert("Senha ou login incorretos.");
+        }
+        else if(status === 'acessoNegado') {
+            window.alert("Deve-se fazer login antes de acessar o perfil.");
+        }
+    </script>
+    <style>
+        .fundo_gif {
+            background-image: url('./assets/fundo.gif');    /* Coloque o caminho do seu GIF aqui */
+            background-size: cover;                         /* Cobre toda a tela com o GIF */
+            background-position: center;                    /* Centraliza o GIF */
+            background-repeat: no-repeat;                   /* Evita repetição do GIF */
+            background-attachment: fixed;                   /* Mantém o fundo fixo ao rolar a página */
+        }
+    </style>
+</head>
+
+<body class="fundo_gif">
+     <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <ul class="cabecalho__menu">
+                <li><a class="menu__links" href="index.html">Home</a></li>
+                <li><a class="menu__links__destaque" href="login.html">Login</a></li>
+                <li><a class="menu__links" href="contatos2.html">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="apresentacao">
+        <div class="container">
+            
+        <form class="login" method="POST" action="./funcoes/login.php">
+            <h1>Entre na sua conta</h1>
+
+            <div class="login__campo">
+                <label for="login">Login:</label>
+                <input id="login" name="login" type="text" maxlength="18" placeholder="Digite seu login" required />
+            </div>
+
+            <div class="login__campo">
+                <label for="senha">Senha:</label>
+                <input id="senha" name="senha" type="password" minlength="8" maxlength="18" placeholder="Digite sua senha" required />
+            </div>
+               <p style="font-family: var(--fonte-primaria);color: aliceblue;">Não tem uma conta ? <a href="registro.html">registre-se </a></p>
+            <button>Logar</button>
+        </form>
+            
+        </div>
+    </main>
+    <footer>
+        <div class="rodape">
+            <p>&copy; 2024 Trabalho estacio. Direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
